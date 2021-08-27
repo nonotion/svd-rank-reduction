@@ -1,9 +1,10 @@
 extern crate nalgebra as na;
+pub use band_filter::*;
 use chrono::prelude::*;
 use image::{imageops::*, GrayImage, RgbImage, RgbaImage};
 use na::{linalg, ArrayStorage, Dynamic, Matrix, VecStorage, U2, U3};
 use noise::{utils::*, Fbm, NoiseFn, OpenSimplex, Perlin, Seedable, Worley};
-use rand::prelude::*;
+
 use std::convert::{From, Into};
 use structopt::StructOpt;
 
